@@ -37,7 +37,7 @@ const ContactModal = ({ isContactModal, setIsContactModal }) => {
                                         </div>
                                     ))}
                                 </div>
-                                <div className="flex w-full md:flex-nowrap flex-wrap justify-center md:gap-8 gap-4 mt-3 items-center">
+                                <div className="flex w-full flex-nowrap  justify-center md:gap-8 gap-4 mt-3 items-center">
                                     <button
                                         onClick={() => setIsContactModal(false)}
                                         className=" p-3 w-full text-[#030712] text-[16px] font-[500] rounded-full inter bg-[#ffff] border-[1.27px] border-[#E6E7E9] cursor-pointer hover:bg-[#F0F0F0] shadow-[#80808040] shadow-sm">
