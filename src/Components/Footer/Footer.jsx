@@ -33,7 +33,7 @@ const Footer = () => {
                             <img src={drlayerlogo5} alt="dr.layer logo" className=" flex   items-center " />
                         </Link>
                         <p className=" roboto  z-10 text-[#fff] mt-4 text-start xl:text-[26px] md:text-[20px] text-[16px] font-[400]">
-                            Copyright @ {new Date().getFullYear()} All Rights Reserved
+                            Copyright @ 2023 All Rights Reserved
                         </p>
                     </div>
                     <div className="w-full max-w-[450px]  grid grid-cols-2 gap-8">
