@@ -27,9 +27,9 @@ const PriorityCasesDetail = () => {
         { casesImage: case6 },
     ]
     const buttons = [
-        { btnTitle: "Interested", bgBtn: "bg-[#75683E] text-white  w-full max-w-[110px]" },
-        { btnTitle: "Not interested", bgBtn: "bg-[#53453B] text-white  w-full max-w-[116px]" },
-        { btnTitle: "Postponed", bgBtn: "bg-[#53453B] text-white  w-full max-w-[110px]" },
+        { btnTitle: "Interested", bgBtn: "bg-[#75683E] text-white " },
+        { btnTitle: "Not interested", bgBtn: "bg-[#53453B] text-white  " },
+        { btnTitle: "Postponed", bgBtn: "bg-[#53453B] text-white " },
     ]
     const navigate = useNavigate()
     const [activeButton, setActiveButton] = useState(0)
@@ -38,8 +38,8 @@ const PriorityCasesDetail = () => {
     return (
         <>
             <section className="w-full min-h-screen bg-[#F6F0E4]">
-                <div className="w-full max-w-[1357px] p-5 md:mt-16 mt-14  mx-auto">
-                    <div className="w-full flex md:flex-nowrap flex-wrap items-center md:mt-10 mt-8 gap-3 justify-between ">
+                <div className="w-full max-w-[1357px] p-5 md:mt-16 mt-12  mx-auto">
+                    <div className="w-full flex lg:flex-nowrap flex-wrap items-center md:mt-10 mt-8 gap-3 justify-between ">
                         <div className="w-full flex  items-center gap-2 ">
                             <button
                                 onClick={() => navigate(-1)}
@@ -52,24 +52,24 @@ const PriorityCasesDetail = () => {
                             </h1>
                         </div>
 
-                        <div className="w-full flex items-center flex-wrap md:flex-nowrap justify-end gap-3 ">
-                            <div className=" w-full max-w-[330px] grid grid-cols-3 gap-3 ">
+                        <div className="w-full flex items-center  justify-end  ">
+                            <div className=" w-full lg:max-w-[550px] max-w-[600px] flex items-center flex-wrap sm:flex-nowrap justify-end gap-3 ">
                                 {buttons.map((btn, index) => (
                                     <button
                                         key={index}
                                         onClick={() => setActiveButton(index)}
-                                        className={` lg:py-3 py-2  roboto hover:shadow-lg cursor-pointer border-[1.27px] text-center lg:text-[14px] text-[12px] font-[400] border-[#53453B] rounded-full transition-all duration-300 ${activeButton === index ? btn.bgBtn : "bg-[#F6F0E4]"
+                                        className={` lg:py-3 py-2  w-[120px]   roboto hover:shadow-lg cursor-pointer border-[1.27px] text-center lg:text-[14px] text-[12px] font-[400] border-[#53453B] rounded-full transition-all duration-300 ${activeButton === index ? btn.bgBtn : "bg-[#F6F0E4]"
                                             }`}
                                     >
                                         {btn.btnTitle}
                                     </button>
                                 ))}
-                            </div>
                             <button
-                                className={`w-full lg:max-w-[144px] max-w-[110px] lg:py-3 py-2 roboto hover:shadow-lg transition-all duration-200  cursor-pointer border-[1.27px] text-center lg:text-[14px]  text-[13px] font-[400]  border-[#53453B] rounded-full bg-[#75683E] text-white transition-all duration-300 `}
+                                className={`w-full lg:max-w-[144px] max-w-[130px] lg:py-3 py-2 roboto hover:shadow-lg transition-all duration-200  cursor-pointer border-[1.27px] text-center lg:text-[14px]  text-[13px] font-[400]  border-[#53453B] rounded-full bg-[#75683E] text-white transition-all duration-300 `}
                             >
                                 Interested (10)
                             </button>
+                            </div>
                         </div>
                     </div>
                     <div className="w-full md:p-10 p-4  flex flex-col w-full justify-between  gap-6 bg-white mt-6  rounded-[22px] ">

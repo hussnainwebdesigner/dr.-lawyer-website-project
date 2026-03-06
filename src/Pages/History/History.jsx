@@ -40,16 +40,16 @@ const History = () => {
     ]
 
     const buttons = [
-        { btnTitle: "Interested", bgBtn: "bg-[#75683E] text-white" },
-        { btnTitle: "Not interested", bgBtn: "bg-[#53453B] text-white" },
-        { btnTitle: "Postponed", bgBtn: "bg-[#53453B] text-white" },
+        { btnTitle: "Interested",bgWidth:"w-[100px]", bgBtn: "bg-[#75683E] text-white " },
+        { btnTitle: "Not interested",bgWidth:"w-[120px]", bgBtn: "bg-[#53453B] text-white " },
+        { btnTitle: "Postponed",bgWidth:"w-[100px]", bgBtn: "bg-[#53453B] text-white " },
     ]
 
     const [activeButton, setActiveButton] = useState(0)
     return (
         <>
             <section className="w-full min-h-screen bg-[#F6F0E4]">
-                <div className="w-full max-w-[1357px] p-5 md:mt-16 mt-14  mx-auto">
+                <div className="w-full max-w-[1357px] p-5 md:mt-16 mt-12  mx-auto">
                     <div className="w-full flex md:flex-nowrap flex-wrap items-center md:mt-10 mt-8 gap-3 justify-between ">
                         <div className="w-full  ">
                             <h1 className="relative inter z-10 tracking-[-5%]  text- text-start  lg:text-[40px] md:text-[26px] text-[24px] font-[600]">
@@ -62,7 +62,7 @@ const History = () => {
                                 <button
                                     key={index}
                                     onClick={() => setActiveButton(index)}
-                                    className={`w-[112px] py-3 roboto hover:shadow-lg transition-all duration-200  cursor-pointer border-[1.27px] text-center text-[12px] font-[400]  border-[#53453B] rounded-full  transition-all duration-300
+                                    className={` md:py-3 py-2 roboto hover:shadow-lg transition-all duration-200  cursor-pointer ${btn.bgWidth} border-[1.27px] text-center text-[12px] md:font-[400]   border-[#53453B] rounded-full  transition-all duration-300
       ${activeButton === index ? btn.bgBtn : "bg-[#F6F0E4] "} `}
                                 >
                                     {btn.btnTitle}
@@ -72,7 +72,7 @@ const History = () => {
                     </div>
 
 
-                    <div className="w-full py-4 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4 ">
+                    <div className="w-full mt-2 py-4 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4 ">
                         {priorityCases.map((cases, index) => (
                             <div key={index} className="w-full relative hover:shadow-lg transition-all duration-200  bg-[#FFFF] flex flex-col justify-center items-center  p-2   rounded-[28px]">
                                 <span

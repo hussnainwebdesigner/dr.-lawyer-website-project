@@ -29,7 +29,7 @@ const Settings = () => {
 
         <>
             <section className="w-full min-h-screen bg-[#F6F0E4]">
-                <div className="w-full max-w-[1357px] p-5 md:mt-16 mt-14  mx-auto">
+                <div className="w-full max-w-[1357px] p-5 md:mt-16 mt-10  mx-auto">
 
                     <div className="w-full mt-10  ">
                         <h1 className="relative inter z-10 tracking-[-5%]  text- text-start lg:text-[40px] md:text-[32px] text-[26px] font-[600]">

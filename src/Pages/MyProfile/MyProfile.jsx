@@ -90,7 +90,7 @@ const MyProfile = () => {
 
         <>
             <section className="w-full min-h-screen bg-[#F6F0E4]">
-                <div className="w-full max-w-[1357px] relative p-5 md:mt-16 mt-14  mx-auto">
+                <div className="w-full max-w-[1357px] relative p-5 md:mt-16 mt-12   mx-auto">
 
                     <div className="w-full md:mt-10 mt-8  flex gap-2 justify-between  items-center">
                         <div className="w-full flex  items-center gap-2  ">
@@ -143,7 +143,7 @@ const MyProfile = () => {
                     </div>
 
 
-                    <div className="flex w-full   mt-2  z-50 transition-all duration-1000 md:p-6 p-4 gap-2.5 bg-[#FFFFFF] rounded-[26px] flex-col  justify-center items-center">
+                    <div className="flex w-full   mt-4  z-50 transition-all duration-1000 md:p-6 p-4 gap-2.5 bg-[#FFFFFF] rounded-[26px] flex-col  justify-center items-center">
 
                         <div className='w-full md:p-3 flex justify-center md:flex-nowrap flex-wrap  items-start gap-3.5'>
                             <div className="flex w-full  lg:max-w-[300px] md:max-w-[220px] flex-col md:order-2 relative justify-center my-5 items-center">

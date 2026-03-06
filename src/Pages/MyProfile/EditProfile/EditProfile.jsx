@@ -84,7 +84,7 @@ const EditProfile = () => {
     return (
         <>
             <section className="w-full min-h-screen bg-[#F6F0E4]">
-                <div className="w-full max-w-[1357px] p-5 md:mt-16 mt-14  mx-auto">
+                <div className="w-full max-w-[1357px] p-5 md:mt-16 mt-12  mx-auto">
 
                     <div className="w-full  md:mt-10 mt-8  flex gap-2 justify-between  items-center">
                         <div className="w-full flex  items-center gap-2  ">
@@ -108,9 +108,9 @@ const EditProfile = () => {
                         </div>
                     </div>
 
-                    <div className="flex w-full   mt-2  z-50 transition-all duration-1000 md:p-6 p-4 gap-2.5 bg-[#FFFFFF] rounded-[26px] flex-col  justify-center items-center">
+                    <div className="flex w-full   mt-4  z-50 transition-all duration-1000 md:p-6 p-4 gap-2.5 bg-[#FFFFFF] rounded-[26px] flex-col  justify-center items-center">
 
-                        <form className='w-full md:p-3 flex justify-center lg:flex-nowrap flex-wrap  items-start gap-3.5'>
+                        <div className='w-full md:p-3 flex justify-center md:flex-nowrap flex-wrap  items-start gap-3.5'>
                             <div className="flex w-full  lg:max-w-[300px] md:max-w-[220px] flex-col md:order-2 relative justify-center my-5 items-center">
                                 <div
                                     className="flex justify-center border-[3px] border-black p-0.5  items-center relative overflow-hidden cursor-pointer rounded-full  lg:w-[168px] w-[120px]  lg:h-[168px] h-[120px]"
@@ -145,22 +145,24 @@ const EditProfile = () => {
                                     onChange={handleProfileChange}
                                 />
                                 <div className="flex w-full flex-col gap-2 .5 items-center">
-                                    <button onClick={(e) => { e.preventDefault(), setDeleteModal(true) }} className={`${isLawyer ? "bg-[#EAE2CF] text-[#642329]" : "bg-[#642329] text-[#FFFFFF]"} w-full max-w-[166px] p-3   text-center  text-[17px] rounded-full inter transition-all duration-300  cursor-pointer `} >
+                                    <button onClick={() => setDeleteModal(true)} className={`${isLawyer ? "bg-[#EAE2CF] text-[#642329]" : "bg-[#642329] text-[#FFFFFF]"} w-full max-w-[166px] p-3   text-center  text-[17px] rounded-full inter transition-all duration-300  cursor-pointer `} >
                                         Delete Account
                                     </button>
+                                    
                                 </div>
 
                             </div>
                             <div className="flex w-full  max-w-[952px] flex-col relative gap-2.5 items-center">
                                 <div className='w-full flex flex-col gap-2.5'>
                                     <label htmlFor="" className='text-[14px] font-[500] tracking-[-1%] text-[#00000] leading-[20px]'>Full name</label>
-                                    <input type="password" name='name' placeholder='Marija Lazic' className='text-[16px] font-[400] text-[#ADB3B7]  rounded-[8px] p-4 border-[1px] border-[#E6E7E9] shadow-[#80808040] drop-shadow-xs bg-[#FFFF] outline-0' />
+                                    <input type="text" name='name' placeholder='Marija Lazic' className='text-[16px] font-[400] text-[#ADB3B7]  rounded-[8px] p-4 border-[1px] border-[#E6E7E9] shadow-[#80808040] drop-shadow-xs bg-[#FFFF] outline-0' />
                                 </div>
 
                                 <div className='w-full flex flex-col gap-2.5'>
                                     <label htmlFor="" className='text-[14px] font-[500] tracking-[-1%] text-[#00000] leading-[20px]'>Email Address</label>
                                     <input type="email" name='email' placeholder='Enter your email' className='text-[16px] font-[400] text-[#ADB3B7]  rounded-[8px] p-4 border-[1px] border-[#E6E7E9] shadow-[#80808040] drop-shadow-xs bg-[#FFFF] outline-0' />
                                 </div>
+
                                 <div className='w-full flex flex-col gap-2.5'>
                                     <label htmlFor="" className='text-[14px] font-[500] tracking-[-1%] text-[#00000] leading-[20px]'>
                                         Phone Number
@@ -198,12 +200,14 @@ const EditProfile = () => {
                                         />
                                     </div>
                                 </div>
+
                                 <div className={`w-full ${isLawyer ? "hidden" : "flex flex-col gap-2.5"} `}>
                                     <label htmlFor="" className='text-[14px] font-[500] tracking-[-1%] text-[#00000] leading-[20px]'>Password</label>
                                     <input type="password" name='password' placeholder='1235432123' className='text-[16px] font-[400] text-[#ADB3B7]  rounded-[8px] p-4 border-[1px] border-[#E6E7E9] shadow-[#80808040] drop-shadow-xs bg-[#FFFF] outline-0' />
                                 </div>
+
                                 <div
-                                    className={`${isLawyer ? "block" : "hidden"} w-full mt-3  max-w-[949px] h-full md:max-h-[602px]  max-h-[352px]   relative overflow-hidden cursor-pointer rounded-[13.01px] `}
+                                    className={`${isLawyer ? "block" : "hidden"} w-full mt-3 max-w-[949px] h-full md:max-h-[602px]  max-h-[352px]  relative overflow-hidden cursor-pointer rounded-[13.01px] `}
                                     onClick={handleCardClick}
                                 >
                                     <img
@@ -220,9 +224,9 @@ const EditProfile = () => {
                                     accept="image/*"
                                     onChange={handleCardChange}
                                 />
-                            </div>
 
-                        </form>
+                            </div>
+                        </div>
 
                     </div>
                 </div>

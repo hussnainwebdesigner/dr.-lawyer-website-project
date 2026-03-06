@@ -49,7 +49,6 @@ const ContactModal = ({ isContactModal, setIsContactModal }) => {
                                         Okay
                                     </button>
                                 </div>
-
                             </div>
                         </div>
                     </div>

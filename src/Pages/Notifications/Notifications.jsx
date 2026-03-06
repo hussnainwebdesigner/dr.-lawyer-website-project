@@ -66,7 +66,7 @@ const Notifications = () => {
     return (
         <>
             <section className="w-full bg-[#F6F0E4]">
-                <div className="w-full max-w-[1357px] p-5 md:mt-16 mt-14  mx-auto">
+                <div className="w-full max-w-[1357px] p-5 md:mt-16 mt-12  mx-auto">
 
                     <div className="w-full md:mt-10 mt-8 ">
                         <h1 className="relative inter z-10 tracking-[-5%]  text- text-start  lg:text-[40px] md:text-[26px] text-[24px] font-[600]">

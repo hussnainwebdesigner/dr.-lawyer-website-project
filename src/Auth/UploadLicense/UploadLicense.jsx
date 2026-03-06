@@ -51,10 +51,6 @@ const UploadLicense = () => {
 
     const totalSteps = 3;
     const currentStep = stepMap[pathname] || 1;
-   
-
-
-
 
     const navigateSignUp = (e) => {
         e.preventDefault()

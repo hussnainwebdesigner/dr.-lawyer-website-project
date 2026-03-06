@@ -50,7 +50,7 @@ const AboutUs = () => {
     return (
         <>
             <section className="w-full min-h-screen bg-[#F6F0E4]">
-                <div className="w-full max-w-[1357px] p-5 md:mt-16 mt-14  mx-auto">
+                <div className="w-full max-w-[1357px] p-5 md:mt-16 mt-12  mx-auto">
                     <div className="w-full flex  items-center gap-2 mt-10 ">
 
                         <button

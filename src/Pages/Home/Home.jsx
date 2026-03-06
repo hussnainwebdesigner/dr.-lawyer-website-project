@@ -167,7 +167,6 @@ const Home = () => {
                 setAddACaseSubmitModal={setAddACaseSubmitModal}
                 />
             <AddACaseSubmitModal
-               
                 setAddACaseModal={setAddACaseModal}
                 addACaseSubmitModal={addACaseSubmitModal}
                 setAddACaseSubmitModal={setAddACaseSubmitModal}  
