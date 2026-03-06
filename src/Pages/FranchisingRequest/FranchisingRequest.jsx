@@ -41,7 +41,7 @@ const FranchisingRequest = () => {
         <>
             <section className=' bg-[#F6F0E4] h-screen w-full  flex justify-between items-center '>
                 <div className='h-screen  w-full overflow-y-auto overflow-scroll  p-4'>
-                    <div className='flex  flex-col w-full mx-auto max-w-[422px]   items-start '>
+                    <div className='flex  flex-col w-full mx-auto max-w-[502px]   items-start '>
                         <div className="flex mt-8 justify-start items-center gap-2.5">
                             <button
                                 onClick={() => navigate(-1)}
